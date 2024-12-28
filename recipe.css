@@ -22,28 +22,174 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;body{
-    background-color: rgb(196, 168, 168);
+	vertical-align: baseline;
 }
-box-sizing: border-box;
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(196, 168, 168);
+    font-family: "Roboto", serif;
+    gap: 30px;
+}
+.main{
+   width: 800px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+
+}
+
 
 .title{
 text-align: center;
-color: rgb(0, 0, 0);
-font-family: "Merienda", serif;
+background-color: rgb(132, 115, 115);
+width: 100%;
+padding: 40px 0;
+margin-bottom:  30px;
+font-family: "Romanesco", serif;
+color:white;
+font-size: 100px;
 }
-#heading{
-    font-size: 45px;
-}}
 .menu{
     display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: "Merienda", serif;
+    flex: 1;
+    gap: 30px;
 }
+
+#menu-title{
+    font-size: 50px;
+    color: rgb(87, 45, 21);
+}
+
 .icons{
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    color: rgb(87, 45, 21);
+    font-size: 30px;
 }
+
+.icons img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px 10px rgb(132, 115, 115);
+}
+
 .dishes{
    display: flex;
    gap: 100px;
    text-align: center;
 }
+
+ /* ------------------------------------------------------------------------------------------------    */
+/* PANEER CSS */
+ #imgP{
+    display: flex;
+    justify-content: center;
+    height:400px;
+    width: 400px;
+    border-radius: 100%;  
+    object-fit:cover;
+ }
+  
+ #paneer-title,
+ #pasta-title,
+ #tea-title{
+    background-color: rgb(161, 97, 36);
+ }
+
+.description-title,
+.ingredients-title,
+.instructions-title{
+    color: rgb(108, 65, 25); 
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+ }
+ .description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(238, 206, 206, 0.185);
+    color: black;
+    padding: 50px;
+    border-radius: 40px;
+    gap: 20px;
+ }
+ .ingredients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 206, 206, 0.185);
+    padding: 50px 70px;
+    gap: 20px;
+    width: 800px;
+    border-radius: 40px;
+}
+ .instructions{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(238, 206, 206, 0.185);
+    padding: 50px 70px;
+    gap: 20px;
+    width: 800px;
+    border-radius: 40px;
+
+ }
+ .ingredients li{
+    width: 150px;
+    text-align: start;
+    margin-bottom: 8px;
+ }
+ .instructions li{
+    text-align: start;
+    margin-bottom: 8px;
+
+ }
+.button{
+    display: flex;
+    gap: 200px;
+    margin: 30px 0px 80px;
+}
+.button button{
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+}
+.button a{
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --------------------------------------------- */
+/* ---------------------Chai---------------------- */
+#imgPa{
+   display: flex;
+   justify-content: center;
+   height:400px;
+   width: 400px;
+   border-radius: 80%;  
+   object-fit:cover;
+}
+
+#imgC{
+   display: flex;
+   justify-content: center;
+   height:400px;
+   width: 400px;
+   border-radius: 100%;  
+   object-fit:cover;}
